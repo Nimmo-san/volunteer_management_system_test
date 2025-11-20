@@ -1,5 +1,6 @@
 # local dev
 backend/config/db.sqlite3
+backend/*/migrations/
 
 *.env.prod
 
