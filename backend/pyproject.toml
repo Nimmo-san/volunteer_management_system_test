@@ -9,7 +9,7 @@ exclude = []
 namespaces = false
 
 [project]
-name = "nhs_volunteer_management"
+name = "nhs_volunteer_management_test"
 version = "0.0.2"
 description = "Volunteer management backend (Django + DRF)"
 readme = "README.md"
