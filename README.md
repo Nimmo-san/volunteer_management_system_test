@@ -4,9 +4,9 @@
 
 1. Add a Dockerfile for the Django app (gunicorn).
 2. Add docker-compose.yml with:
-    - web (Django + gunicorn)
+    - django-web (Django + gunicorn)
     - db (Postgres)
-3. Small entrypoint.sh for migrations + collectstatic.
+3. Small entrypoint.prod.sh for migrations + collectstatic.
 
 
 
