@@ -2,7 +2,7 @@
 *.log
 
 # Exclude the node_modules directory
-# frontend/node_modules/
+frontend/node_modules/
 
 # Excluding the frontend, for testing
 frontend/
