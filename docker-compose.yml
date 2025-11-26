@@ -16,6 +16,9 @@ services:
       - db
     volumes:
       - ./static:/app/staticfiles
+    # temp exposing port
+    ports:
+      - "8000:8000"
 
   nginx:
     image: nginx:alpine
@@ -27,6 +30,7 @@ services:
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./static:/static:ro
+      - ./frontend/dist:/usr/share/nginx/html:ro
 
 volumes:
   postgres_data:
