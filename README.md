@@ -31,3 +31,5 @@ Django via Gunicorn on django-web:8000
 
 
 # Next up: CORS
+
+Serving frontend, using NGINX
