@@ -9,10 +9,18 @@ SESSION_COOKIE_SECURE = True
 SECURE_HSTS_SECONDS = 31536000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = False # for dev
+SECURE_SSL_REDIRECT = True # for prod
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 
 ALLOWED_HOSTS = [
     "http://localhost:5173"
+    "http://localhost",
+    "localhost",
+    "http://localhost/api/token/",
+    # "django-web:8000",
+    # "django-web",
 ]
 
 # not recommended for prod
