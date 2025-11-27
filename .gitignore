@@ -2,6 +2,8 @@
 backend/config/db.sqlite3
 backend/*/migrations/
 
+frontend/.vscode
+
 *.env.prod
 
 
